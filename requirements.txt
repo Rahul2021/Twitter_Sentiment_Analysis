@@ -7,5 +7,5 @@ gunicorn==19.9.0
 MarkupSafe==1.1.1
 itsdangerous==1.1.0
 textblob==0.15.3
-nltk==3.4
+nltk==3.4.5
 pybase64
