@@ -1,0 +1,48 @@
+
+#Home{
+	background-image: url("/static/images/tw.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:100vh;
+	background-position:center;
+}
+
+h1{
+	color:white;
+	font-family: Optima, sans-serif;
+}
+#h1t{
+	padding-top: 1px;
+	color:white;
+	font-family: Optima, sans-serif;
+}
+.blue{
+   background-color: rgb(100, 181, 246);
+}
+.tpblack{
+  background-color: rgba(26, 35, 126,0.6);
+}
+.form-group{
+	width:55%;
+	margin: auto;
+}
+label{
+	color:white;
+}
+button{
+	margin: auto;
+}
+form{
+	background-color: rgba(0,0,0,0.6);
+}
+ul{
+	list-style: none;
+	font-family: Optima, sans-serif;
+	font-weight: bold;
+	margin:0;
+	padding: 0;
+}
+table{
+	font-family: Optima, sans-serif;
+}

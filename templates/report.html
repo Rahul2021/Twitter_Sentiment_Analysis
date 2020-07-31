@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="container-fluid blue m-auto">
+         <div class="row blue" >
+            <div class="col-md-4 m-auto blue">
+                <h2 id="h1t">Generated Report</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-4 mt-3">
+    			<ul>
+                   {%for i in val%} 
+                     <li><p>{{i}}</p></li>
+                   {%endfor%} 
+                 </ul>
+    		</div>
+    		<div class="col-4 mt-4">
+    			<img src="data:image/png;base64,{{p}}" alt="plot"  width="400px" >
+    		</div>
+    	</div>
+    	<div class="row mt-3 ">
+         <div class="col-12 table-responsive m-auto">
+          <table class="table table-hover  thread-light table-bordered m-auto" >
+         	<thead class="table-dark">
+         		<tr>
+         			<th>Username</th>
+         			<th>Tweet</th>
+         		</tr>
+         	</thead>
+         	<tbody>
+         		{%for tup in nt%} 
+                  <tr><td>{{tup[0]}}</td><td>{{tup[1]}}</td></tr>
+                {%endfor%} 
+         	</tbody>
+          </table>
+         </div>
+        </div>
+    </div>
+
+{% endblock content %}
